@@ -41,11 +41,6 @@ ul {
   margin: 0;
 }
 
-ol {
-  padding: 0;
-  margin: 0;
-}
-
 .hero {
   background-size: cover;
   background-position: center;
@@ -134,4 +129,27 @@ ol {
     max-width: 490px;
     font-size: 60px;
   }
+}
+.gallary__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.gallary__link {
+  display: block;
+  background-color: cornflowerblue;
+  max-width: 290px;
+  padding: 10px;
+  gap: 20px;
+}
+.gallary__link:not(:last-child) {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
