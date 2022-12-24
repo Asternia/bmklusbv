@@ -81,14 +81,14 @@
             to right,
             rgba(48, 48, 58, 0.4),
             rgba(48, 48, 58, 0.4)),
-            url(../images/building-1280.jpg);
+            url(../images/building-1920.jpg);
 
         @include retina {
             background-image: linear-gradient(
             to right,
             rgba(48, 48, 58, 0.4),
             rgba(48, 48, 58, 0.4)),
-            url(../images/building-1920.jpg);
+            url(../images/building-5264.jpg);
         }
 
         &__container {

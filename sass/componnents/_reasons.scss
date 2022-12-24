@@ -1,0 +1,57 @@
+.reasons {
+    padding-top: 20px;
+    padding-bottom: 50px;
+
+    &__text:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
+
+// tablet 
+
+@include tablet {
+    .reasons {
+        &__img {
+            width: 390px;
+        }
+
+        &__flex {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &__container {
+            padding: 5px;
+            border: 2px solid gray;
+            border-radius: 10px;
+        }
+    }
+}
+
+// desktop
+
+@include desktop {
+    .reasons {
+        &__img {
+            width: 470px;
+        }
+
+        &__flex {
+            justify-content: center;
+        }
+
+        &__title {
+            font-size: 25px;
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+
+        &__container {
+            padding: 19px;
+        }
+    }
+}
