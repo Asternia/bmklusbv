@@ -1,5 +1,8 @@
 .gallary {
 
+    padding-top: 40px;
+    padding-bottom: 40px;
+
     &__flex {
         display: flex;
         flex-direction: column;
@@ -9,13 +12,85 @@
 
     &__link {
         display: block;
-        background-color: cornflowerblue;
-        max-width: 290px;
+
+        // max-width: 290px;
+        text-decoration: none;
+        color: black;
         padding: 10px;
         gap: 20px;
     }
 
-    &__link:not(:last-child) {
-        margin-bottom: 20px;
+    &__list {
+        position: relative;
+        width: 290px;
+        border: 2px solid gray;
+        border-radius: 10px;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        bottom: 30px;
+        right: 45%;
+        width: 30px;
+        background-color: white;
+    }
+
+    &__title {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+// tablet 
+
+@include tablet {
+    .gallary {
+
+        &__flex {
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+        }
+
+        &__list:not(:last-child) {
+            margin-bottom: 0;
+        }
+
+        &__icon {
+            bottom: 50px;
+        }
+    }
+}
+
+// desktop
+
+@include desktop {
+    .gallary {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        &__list {
+            height: 70px;
+            width: 300px;
+        }
+
+        &__link {
+            font-size: 20px;
+        }
+
+        &__icon {
+            bottom: 60px;
+        }
     }
 }
