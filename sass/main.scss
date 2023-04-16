@@ -1,7 +1,10 @@
 @import "./base/container";
 @import "./base/reset";
 @import "./utils/mixins";
+@import "./utils/variables";
 
+@import './componnents/header';
+@import "./componnents/mobmenu";
 @import "./componnents/hero";
 @import "./componnents/gallary";
 @import "./componnents/reasons";
