@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BM KLUS BV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Inter:wght@200;400;700;900&family=Playfair+Display&display=swap" 
+    rel="stylesheet">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -13,12 +15,61 @@
   </head>
 
   <body>
+    <header>
+      <div class="container">
+        <div class="container-header">
+          <a href="./index.html" class="logo">Bm Klus BV</a>
+          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40" height="40" aria-label="Switch mobile window">
+              <use class="icon-open" href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <ul class="menu">
+            <li class="item">
+              <a href="#home" class="link current">Home</a>
+            </li>
+            <li class="item">
+              <a href="#projects" class="link">Projects</a>
+            </li>
+            <li class="item">
+              <a href="#about" class="link">About</a>
+            </li>
+            <li class="item"><a href="#contact" class="link">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- mobile menu -->
+
+      <div class="menu-container js-menu-container container" id="mobile-menu">
+        <div class="menu-toggle__close">
+          <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="icon-close" href="./images/sprite.svg#icon-closemob"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="mobile-menu">
+          <li class="item-mob">
+            <a href="#home" class="link current">Home</a>
+          </li>
+          <li class="item-mob">
+            <a href="#projects" class="link">Projects</a>
+          </li>
+          <li class="item-mob">
+            <a href="#about" class="link">About</a>
+          </li>
+          <li class="item-mob"><a href="#contact" class="link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
     <main>
       <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__title">Мы! Ваш лучший выбор!</h1>
-          <p class="hero__logo">bm klus bv</p>
+          <!-- <p class="hero__logo">bm klus bv</p> -->
         </div>
       </section>
   
@@ -76,5 +127,6 @@
     <footer>
 
     </footer>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
